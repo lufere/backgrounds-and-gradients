@@ -4,3 +4,26 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+.hero{
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -650px;
+    height: 665px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+#promoWrapper{
+    /* border: 1px solid goldenrod; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.promo{
+    width: 359px;
+    margin: 2px 1px 0 1px;
+}
