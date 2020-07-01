@@ -5,6 +5,11 @@ html {
     box-sizing: inherit;
   }
 
+  @font-face {
+    font-family: 'Liberation Sans';
+    src: url("../fonts/LiberationSans-Regular.ttf"); 
+}
+
 .hero{
     background-image: url("../img/hero.jpg");
     background-repeat: no-repeat;
@@ -12,6 +17,8 @@ html {
     background-position-y: -650px;
     height: 665px;
     width: 100%;
+    display: flex;
+    justify-content: center;
     /* border: 1px solid red; */
 }
 
@@ -22,8 +29,66 @@ html {
     justify-content: center;
 }
 
-
 .promo{
     width: 359px;
     margin: 2px 1px 0 1px;
+}
+
+nav{
+    display: flex;
+    background-image: linear-gradient(#737373, #5e5e5e 50%, #707070 50%, #8d8d8d);
+    position: absolute;
+    top: 84px;
+    border-radius: 5px;
+    /* border:1px solid black; */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.295);
+}
+
+nav a{
+    color:white;
+    font-family: 'Liberation Sans', Arial;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 36px;
+    border-right: 1px solid #535353b0;
+    /* border: 1px solid red; */
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo > img{
+    height: 36px;
+    width: 100%;
+    /* border: 2px solid red; */
+    object-fit: none;
+    object-position: 50% -1%;
+}
+
+.searchWrapper{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+
+.searchWrapper > div{
+    width: 105px;
+    height: 20px;
+    border: 2px solid #808080;
+    border-top: none;
+    border-radius: 30px;
+    box-shadow: 0px -2px;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.searchWrapper > div img{
+    margin-left: 3px;
 }
